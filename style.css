@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Domine', serif;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Domine', serif;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 20px 0 ;
+    background: #D3D3D3;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #E88080;
+}
+
+.navbar.sticky .logo a:hover {
+    color: #E88080;
+}
+
+.navbar.sticky .logo a span:hover {
+    color: #E88080;
+}
+
+.icon_linkedin a:hover {
+    color: #E88080;
+}
+
+.navbar_maxwidth {
+    max-width: 2000px;
+    padding: 0px 80px;
+    padding-left:50px;
+    margin: auto;
+}
+
+.navbar .navbar_maxwidth {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 50px 10px;
+    position:relative;
+}
+
+ .navbar .menu li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 25px;
+    text-decoration: none;     
+ }
+ 
+ .navbar .logo{
+   margin-top:10px;
+   margin-right:320px;
+}
+    
+.navbar .logo a{
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+.navbar .logo a span{
+    color: black;
+    position: relative;
+    top: 45px;
+    left:-90px;
+}
+
+.navbar .icon_linkedin{
+    margin-top:50px;   
+}
+
+.icon_linkedin .link_profile {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: -350px;
+    border-radius: 0px;
+    border: 2px solid black;
+    padding: 10px 30px;
+    color:black;
+}
+
+/*Menu button styling*/
+.navbar .menu-btn{
+    position:absolute;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/*Home Section*/
+.home {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Domine', serif;
+    position: relative;
+}
+
+.home .content{
+    position:absolute;
+}
+
+.home .content .content_describe{
+    position:absolute;
+    width:680px;
+    height:350px;
+    border: 2px solid black;
+    margin-left: -160px;
+    margin-top: 55px;
+    z-index:2;
+    background:white;
+}
+
+.img_div {
+    margin-left: -490px;
+    margin-top: -250px;
+}
+
+.img1 {
+    position: absolute;
+    width: 400px;
+    height: 460px;
+    z-index: 1;
+}
+
+.home .content .content_describe .content_1 {
+    margin-left: 160px;
+    margin-top: 30px;
+    color:black;
+    font-size:30px;
+}
+
+.home .content .content_describe p {
+    text-align: justify;
+    padding-right: 35px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 45px;
+    font-size: 18px;
+    font-family: 'Domine', serif;
+    line-height: 2.0;
+    overflow-wrap: break-word;
+    color: black;
+}
+
+
+/*Skill Section*/
+.skills h2{
+    margin-top:-500px;
+}
+
+.skills {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Domine', serif;
+    position: relative;
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Domine', serif;
+    line-height: 2.0;
+    overflow-wrap: break-word;
+    color: black;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: deepskyblue;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: 2px solid blue;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .right{
+    margin-top: 100px;
+   
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: deepskyblue;
+}
+
+
+.skills-content .right .csharp::before {
+    width: 90%;
+    animation: csharp 5s infinite;
+}
+
+.skills-content .right .html::before {
+    width: 80%;
+    animation: html 5s infinite;
+}
+
+.skills-content .right .js::before {
+    width: 70%;
+    animation: js 5s infinite;
+}
+
+.skills-content .right .css::before {
+    width: 60%;
+    animation: css 5s infinite;
+}
+
+.skills-content .right .sql::before {
+    width: 70%;
+    animation: sql 5s infinite;
+}
+
+@keyframes csharp{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes html{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes js{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes css{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes sql{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+
+/*Contact Section*/
+
+.contactme {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Domine', serif;
+    position: relative;
+}
+
+.contactme .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:100px;
+    margin-right:350px;
+   
+}
+
+.contactme h2 {
+    margin-top: -800px;
+}
+
+.contactme .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contactme .contact-content .icons i:hover {
+    color:deepskyblue;
+}
+
+.contactme .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contactme .contact-content .row i {
+    font-size: 25px;
+}
+
+.contactme .contact-content .info .head {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contactme .contact-content .info .sub-title {
+    color: black;
+    font-size: 18px;
+}
+
+.contactme .right form .fields {
+    display: flex;
+}
+
+
+/*right side of contact*/
+
+
+.contactme .right form .fields {
+    display: flex;
+}
+
+
+.contactme .right .text{
+     font-size:18px;
+        font-family: 'Domine', serif;
+}
+
+.contactme .right form .field,
+.contactme .right form .fields .field {
+        height: 45px;
+        width: 100%;
+        margin-bottom: 15px;
+      
+    }
+
+.contactme .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contactme .right form .name {
+    margin-right: 10px;
+}
+
+.contactme .right form .field input,
+.contactme .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size:18px;
+    font-family: 'Domine', serif;
+    transition: all 0.3s ease;
+}
+
+    .contactme .right form .field input:focus,
+    .contactme .right form .textarea textarea:focus {
+        border-color: #b3b3b3;
+    }
+
+.contactme .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contactme .right form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+.contactme .right form .button-area .submit{
+    font-size:18px;
+    font-family: 'Domine', serif;
+}
+
+
+
+    /* Responsive website */
+    @media screen and (max-width: 800px) {
+
+        .navbar_maxwidth {
+            padding: 0 50px;
+        }
+
+        .navbar .logo {
+            padding: 30px 50px;
+            width: 100%;
+        }
+
+        .navbar .logo a {
+            margin-left: 220px;
+            font-size: 65px;
+            font-weight: 600;
+        }
+
+        .navbar .logo a span {
+             position: relative;
+             top: 80%;
+             left: -120px;
+        }
+
+        .icon_linkedin .link_profile span {
+            display: none;
+        }
+
+        .icon_linkedin .link_profile {
+            border: none;
+        }
+
+        .icon_linkedin .link_profile i {
+             font-size: 80px;
+             padding: 0 50px;
+             margin-left: 100px;
+             margin-top: 20px;
+        }
+
+        .navbar .menu-btn {
+            padding: 0 50px;
+            font-size: 45px;
+            display: block;
+            margin-left: 25px;
+            margin-top: -60px;
+            z-index: 1001;
+        }
+
+        .menu-btn i.active:before {
+            content: "\f00d";
+        }
+
+        .navbar .menu .menu-close {
+            display: block;
+            margin-left: 250px;
+            margin-top: -40px;
+        }
+
+        .navbar .menu {
+            position: fixed;
+            height: 100vh;
+            width: 35%;
+            top: 0;
+            left: -400px;
+            background: pink;
+            text-align: center;
+            padding-top: 180px;
+            z-index: 2;
+            transition: 1s;
+        }
+
+        .navbar .menu.active {
+            left: 0;
+        }
+
+        .navbar .menu li {
+            display: block;
+        }
+
+        .navbar .menu li a {
+             color: black;
+             display: inline-block;
+             font-size: 20px;
+        }
+    
+    }
