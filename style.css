@@ -877,6 +877,6 @@ section .title {
 
         .navbar_maxwidth {
             padding: 0px 0px;
-            padding-left: 0px;
+            padding-left: 10px;
         }
     }
