@@ -871,5 +871,11 @@ section .title {
         .copyright{
            margin-left:350px;
         }
-
     }
+
+@media screen and (max-width: 1400px) {
+    .navbar_maxwidth {
+        padding: 0px 0px;
+        padding-left: 0px;
+    }
+}
